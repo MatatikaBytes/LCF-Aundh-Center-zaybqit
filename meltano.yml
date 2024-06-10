@@ -10,10 +10,17 @@ plugins:
   - name: tap-google-sheets
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-google-sheets@v0.4.0
+  - name: tap-github
+    variant: matatika
+    pip_url: git+https://github.com/MeltanoLabs/tap-github.git
   loaders:
   - name: target-postgres
     variant: matatika
     pip_url: git+https://github.com/Matatika/pipelinewise-target-postgres@v0.2.0
+  transforms:
+  - name: dbt-github
+    variant: matatika
+    pip_url: https://github.com/Matatika/dbt-tap-github@v0.2.0
   transformers:
   - name: dbt
     variant: dbt-labs
@@ -25,6 +32,9 @@ plugins:
   - name: analyze-dbt-models
     variant: matatika
     pip_url: git+https://github.com/Matatika/analyze-dbt-models@v0.2.0
+  - name: analyze-github
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/analyze-github@v0.2.0
   utilities:
   - name: matatika
     variant: matatika
