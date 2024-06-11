@@ -1,0 +1,8 @@
+version: pipelines/v0.1
+name: tap-example-custom-data-source
+timeout: 0
+max_retries: 0
+data_components:
+- tap-example-custom-data-source
+- LCF Warehouse
+- dbt
