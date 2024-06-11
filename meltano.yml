@@ -13,6 +13,9 @@ plugins:
   - name: tap-github
     variant: matatika
     pip_url: git+https://github.com/MeltanoLabs/tap-github.git
+  - name: tap-example-custom-data-source
+    variant: matatika
+    pip_url: git+https://github.com/ets/tap-spreadsheets-anywhere.git
   loaders:
   - name: target-postgres
     variant: matatika
@@ -35,6 +38,9 @@ plugins:
   - name: analyze-github
     variant: matatika
     pip_url: git+https://github.com/Matatika/analyze-github@v0.2.0
+  - name: analyze-example-custom-data-source
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/analyze-example-custom-data-source.git
   utilities:
   - name: matatika
     variant: matatika

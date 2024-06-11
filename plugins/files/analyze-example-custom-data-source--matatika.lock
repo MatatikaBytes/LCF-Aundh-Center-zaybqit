@@ -1,0 +1,11 @@
+{
+  "plugin_type": "files",
+  "name": "analyze-example-custom-data-source",
+  "namespace": "tap_example_custom_data_source",
+  "variant": "matatika",
+  "label": "analyze-example-custom-data-source",
+  "pip_url": "git+https://github.com/Matatika/analyze-example-custom-data-source.git",
+  "update": {
+    "analyze/datasets/tap-example-custom-data-source": "true"
+  }
+}
