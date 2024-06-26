@@ -1,0 +1,6 @@
+version: pipelines/v0.1
+name: Slack
+timeout: 0
+max_retries: 0
+data_components:
+- tap-slack
