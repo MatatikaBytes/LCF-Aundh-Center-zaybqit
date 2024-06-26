@@ -1,0 +1,108 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-slack",
+  "namespace": "tap_slack",
+  "variant": "meltanolabs",
+  "label": "Slack",
+  "docs": "https://www.matatika.com/data-details/tap-slack/",
+  "repo": "https://github.com/MeltanoLabs/tap-slack",
+  "pip_url": "git+https://github.com/MeltanoLabs/tap-slack.git",
+  "description": "Slack is a team communication and collaboration platform.\n\nSlack is a cloud-based software that allows teams to communicate and collaborate in real-time through channels, direct messages, and file sharing. It integrates with various third-party applications and services, making it a central hub for team communication and project management. Slack also offers features such as video and voice calls, screen sharing, and app customization to enhance team productivity and efficiency.",
+  "logo_url": "https://app.matatika.com/assets/logos/extractors/slack.png",
+  "capabilities": [
+    "about",
+    "discover",
+    "stream-maps",
+    "schema-flattening",
+    "state",
+    "catalog"
+  ],
+  "settings": [
+    {
+      "name": "api_key",
+      "kind": "password",
+      "label": "API Key",
+      "description": "A unique identifier used to authenticate and authorize access to the Slack API.",
+      "protected": false
+    },
+    {
+      "name": "auto_join_channels",
+      "kind": "boolean",
+      "label": "Auto Join Channels",
+      "description": "A list of channels that the bot will automatically join upon startup.",
+      "protected": false
+    },
+    {
+      "name": "channel_types",
+      "kind": "array",
+      "value": "[\"public_channel\"]",
+      "label": "Channel Types",
+      "description": "A list of channel types to include in the bot's operations (e.g. public, private, direct message).",
+      "protected": false
+    },
+    {
+      "name": "excluded_channels",
+      "kind": "array",
+      "label": "Excluded Channels",
+      "description": "A list of channels to exclude from the bot's operations.",
+      "protected": false
+    },
+    {
+      "name": "flattening_enabled",
+      "kind": "boolean",
+      "label": "Flattening Enabled",
+      "description": "A boolean value indicating whether or not to flatten nested message threads.",
+      "protected": false
+    },
+    {
+      "name": "flattening_max_depth",
+      "kind": "integer",
+      "label": "Flattening Max Depth",
+      "description": "The maximum depth of nested message threads to flatten.",
+      "protected": false
+    },
+    {
+      "name": "include_admin_streams",
+      "kind": "boolean",
+      "label": "Include Admin Streams",
+      "description": "A boolean value indicating whether or not to include admin-only streams in the bot's operations.",
+      "protected": false
+    },
+    {
+      "name": "selected_channels",
+      "kind": "array",
+      "label": "Selected Channels",
+      "description": "A list of specific channels to include in the bot's operations.",
+      "protected": false
+    },
+    {
+      "name": "start_date",
+      "kind": "date_iso8601",
+      "label": "Start Date",
+      "description": "The date from which to start retrieving messages.",
+      "protected": false
+    },
+    {
+      "name": "stream_map_config",
+      "kind": "object",
+      "label": "Stream Map Config",
+      "description": "A configuration object for mapping channels to streams.",
+      "protected": false
+    },
+    {
+      "name": "stream_maps",
+      "kind": "object",
+      "label": "Stream Maps",
+      "description": "A list of channel-to-stream mappings.",
+      "protected": false
+    },
+    {
+      "name": "thread_lookback_days",
+      "kind": "integer",
+      "value": 1,
+      "label": "Thread Lookback Days",
+      "description": "The number of days to look back when retrieving message threads.",
+      "protected": false
+    }
+  ]
+}

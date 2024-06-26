@@ -16,6 +16,9 @@ plugins:
   - name: tap-example-custom-data-source
     variant: matatika
     pip_url: git+https://github.com/ets/tap-spreadsheets-anywhere.git
+  - name: tap-slack
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-slack.git
   loaders:
   - name: target-postgres
     variant: matatika
